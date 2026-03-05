@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Moon, Sun } from "lucide-react";
-
-// Navigation links removed by user request.
-const links: { label: string; href: string }[] = [];
+import { Moon, Sun } from "lucide-react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -30,16 +27,14 @@ const Navbar = () => {
         <a href="#" className="font-display text-sm font-bold tracking-wider gradient-text">
           BLE MESH
         </a>
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setDark(!dark)}
-            className="p-2 rounded-lg hover:bg-secondary transition-colors text-muted-foreground"
-          >
-            {dark ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
-        </div>
+        <button
+          onClick={() => setDark(!dark)}
+          className="p-2 rounded-lg hover:bg-secondary transition-colors text-muted-foreground"
+          aria-label="Toggle theme"
+        >
+          {dark ? <Sun size={16} /> : <Moon size={16} />}
+        </button>
       </div>
-      {/* mobile menu removed */}
     </nav>
   );
 };

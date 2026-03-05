@@ -187,7 +187,7 @@ const BluetoothDemo: React.FC = () => {
   }, []);
 
   return (
-    <section id="bt-demo" className="bg-secondary/5 p-4 rounded">
+    <section id="bluetooth-demo" className="bg-secondary/5 p-4 rounded">
       <h3 className="text-sm font-semibold mb-2">Real-time Two-Phone Bluetooth Demo</h3>
       <p className="text-xs text-muted-foreground mb-3">Both devices start with Bluetooth ON. Messages are exchanged via a simulated Bluetooth channel in real time.</p>
       <div className="grid sm:grid-cols-2 gap-4">

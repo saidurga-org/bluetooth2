@@ -27,7 +27,7 @@ const HeroSection = () => (
           A decentralized system that extends Bluetooth range using multi-hop relay nodes—enabling communication without internet or infrastructure.
         </p>
         <a
-          href="#bt-demo"
+          href="#bluetooth-demo"
           className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
         >
           View Project
